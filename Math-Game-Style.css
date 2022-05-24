@@ -1,0 +1,203 @@
+/*    defaults      */
+
+html {
+    background-color: #ccc;
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+ p {
+    margin: auto;
+    font-size: 2.2rem;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+button {
+    border: none;
+    font-size: 2.2rem;
+}
+
+/*    container box     */
+
+#container {
+    height: 48rem;
+    max-width: 48rem;
+    background-color: #9DD2EA;
+    margin: auto;
+    padding: 2rem 3rem;
+    border-radius: 7px;
+    box-shadow: 1px 4px 2px #009de4;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#container > div {
+    width: 100%;
+    position: relative;
+}
+
+/*     top section     */
+
+.top-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*    timer section    */
+
+#time {
+    padding: 0.5rem;
+    border-radius: 4px;
+    background-color: #F1FF92;
+    box-shadow: 1px 4px 2px #9da853;
+    color: #2b2922;
+}
+
+/*   score box   */
+
+#score {
+    background-color: #F1FF92;
+    color: #2b2922;
+    padding: 0.5rem 1.2rem;
+    box-shadow: 1px 4px 2px #9da853;
+    border-radius: 4px;
+}
+
+/*     correct box     */
+
+#correct {
+    background-color: #42e252;
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    position: absolute;
+    top: 2rem;
+    left: 19rem;
+    display: none;
+}
+
+/*     wrong box     */
+
+#wrong {
+    background-color: #de401a;
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    position: absolute;
+    top: 2rem;
+    left: 19rem;
+    display: none;
+}
+
+/*    question box    */
+
+#question {
+    height: 18rem;
+    margin: 1rem auto;
+    padding-top: 4rem;
+    background-color: #9DA0EA;
+    box-shadow: 1px 4px 2px #535aa8; 
+}
+
+#question > p {
+    font-size: 10rem;
+    font-family: cursive, sans-serif;
+    
+}
+
+/*    instruction section     */
+
+#instruction {
+    background-color: #B481D9;
+    margin: 0 auto 1rem;
+    padding: 0.7rem 0;
+    box-shadow: 1px 4px 2px #535aa8;
+}
+
+/*    choice boxes     */
+
+#choices {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto 1.5rem;
+}
+
+.choice-box {
+    width: 8.5rem;
+    height: 8.5rem;
+    position: relative;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 1px 4px 2px #535aa8;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.choice-box:hover,
+#start:hover {
+    background-color: #5C79F0;
+    color: #fff;
+}
+
+.choice-box:active,
+#start:active {
+    box-shadow: 0 0 #5C79F0;
+    top: 0.3rem;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/*    start/restart button    */
+
+#start-reset-btn {
+    text-align: center;
+}
+
+#start {
+    border-radius: 4px;
+    background-color: #535aa8;
+    color: #fff;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    box-shadow: 1px 4px 2px #535aa8;
+    position: relative;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+}
+
+/*    final score box    */
+
+#end-game {
+    width: 50rem;
+    height: 20rem;
+    background: -webkit-linear-gradient(#F3CA6B, #F3706C);
+    background: -moz-linear-gradient(#F3CA6B, #F3706C);
+    background: -o-linear-gradient(#F3CA6B, #F3706C);
+    background: -ms-linear-gradient(#F3CA6B, #F3706C);
+    color: #fff;
+    padding: 1rem;
+    text-transform: uppercase;
+    top: 9rem;
+    left: -49rem;
+    z-index: 2;
+    display: none;
+}
+
+#end-game > p {
+    font-size: 4rem;
+    line-height: 1.6;
+}
+
+
+

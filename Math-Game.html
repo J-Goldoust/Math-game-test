@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Math Game</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+        <link rel="stylesheet" href="Math-Game-Style.css">
+    </head>
+    <body>
+        <div id="container">
+            
+<!-- Timer box --------->
+            
+            <div class="top-row">
+                <div id="time">
+                <p>Time: <span id="time-remaining">60</span> sec</p>
+                </div>
+            
+<!-- Score box -------->
+            
+                <div id="score">
+                  <p>Score: <span id="score-value">0</span></p>
+                </div>
+            </div>
+
+<!-- Question box ------>
+            
+            <div class="question-box">
+                <div id="correct">
+                    <P>Correct</P>
+                </div>
+                <div id="wrong">
+                    <p>Try again</p>    
+                </div> 
+                <div id="question">
+                    <p id="question-box"></p>
+                </div>
+            </div>
+            
+<!-- Instruction section ------>
+            
+            <div id="instruction">
+                <p>Choose the correct answer</p>
+            </div>
+            
+<!-- Choices section ------->
+            
+            <div id="choices">
+                <div id="box1"><button id="box-1" class="choice-box" onclick="select('box-1')"></button>
+                </div>
+                
+                <div id="box2"><button id="box-2" class="choice-box" onclick="select('box-2')"></button>
+                </div>
+                
+                <div id="box3"><button id="box-3" class="choice-box" onclick="select('box-3')"></button>
+                </div>
+                
+                <div id="box4"><button id="box-4" class="choice-box" onclick="select('box-4')"></button>
+                </div>
+            </div>
+            
+<!-- Start button ------->
+            
+            <div id="start-reset-btn">
+                <button id="start" onclick="startGame()">Start</button>
+            </div>
+            
+<!-- final score box ------>
+            
+            <div id="end-game">
+                <P>Time is up!</P>
+                <p>Your score:<br><span id="result"></span></p>
+            </div>
+        </div>
+        
+       <script src="Math-Game-script.js"></script>
+    </body> 
+</html>
+
+
+
+
